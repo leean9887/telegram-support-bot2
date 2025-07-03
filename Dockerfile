@@ -11,5 +11,5 @@ RUN npm install
 
 COPY ./src /bot/src
 COPY ./tsconfig.json /bot/tsconfig.json
-
+COPY ./config /bot/config
 CMD ["npm", "run", "prod", "--prefix", "/bot"]
